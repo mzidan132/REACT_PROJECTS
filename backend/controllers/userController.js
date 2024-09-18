@@ -70,7 +70,7 @@ const registerUser = async (req,res) => {
 }
   
   const createToken = (id) => {
-    return jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: '1h' }); // Optional expiration time
+    return jwt.sign({ id }, process.env.JWT_SECRET); // Optional expiration time
   };
   
 
