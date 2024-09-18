@@ -20,24 +20,24 @@ const FoodDisplay = () => {
       <div className='food-display'>
         <div className="food-display-list">
           {food_list.map((item, index) => {
-            // Ensure each item is defined
-            if (!item) return null;
+  // Ensure each item is defined and has an _id
+  if (!item || !item._id) return null; // Return null or some fallback UI if item is undefined or has no _id
 
-            // Filter items based on category
-            if (category === 'All' || category === item.category) {
-              return (
-                <FoodItem
-                  key={item._id} // Prefer using unique id as key
-                  id={item._id}
-                  name={item.name}
-                  description={item.description}
-                  price={item.price}
-                  image={item.image}
-                />
-              );
-            }
-            return null;
-          })}
+  // Filter items based on category
+  if (category === 'All' || category === item.category) {
+    return (
+      <FoodItem
+        key={item._id}  // Safely use the _id after checking it's defined
+        id={item._id}
+        name={item.name}
+        description={item.description}
+        price={item.price}
+        image={item.image}
+      />
+    );
+  }
+  return null;
+})}
         </div>
       </div>
     </div>
