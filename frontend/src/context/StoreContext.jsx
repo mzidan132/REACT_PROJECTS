@@ -62,9 +62,18 @@ const StoreContextProvider = (props) => {
 
     // Function to fetch the list of food items from the backend
     const fetchFoodList = async () => {
-        const response = await axios.get(url + "/api/food/list");
-        setFoodList(response.data.data);
-    };
+  try {
+    const response = await axios.get(url + "/api/food/list");
+    if (response.data && Array.isArray(response.data.data)) {
+      setFoodList(response.data.data);  // Only set food_list if data is an array
+    } else {
+      console.error("Invalid food list data");
+    }
+  } catch (error) {
+    console.error("Error fetching food list:", error);
+  }
+};
+
 
     // Function to load cart data from the backend
     const loadCartData = async (token) => {
