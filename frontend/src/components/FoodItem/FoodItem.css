@@ -1,0 +1,98 @@
+.food-item {
+    width: 100%;
+    
+    margin: 0; /* Remove any top/bottom margins */
+    padding: 10px; /* Minimal padding to keep spacing inside the item */
+    min-height: 300px; /* Set a fixed minimum height to prevent uneven rows */
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px grey;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Spread content to avoid extra space at bottom */
+    animation: fadeIn 2s;
+}
+
+.food-item:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+}
+
+.food-item-image {
+    width: 100%;
+    height: 200px; /* Fixed height for the image */
+    border-radius: 15px 15px 15px 15px; /* Round top corners of the image */
+    object-fit: cover; /* Ensures the image fills the box without distortion */
+}
+
+.food-item-info {
+    padding: 20px 0; /* Adjust padding for better layout */
+}
+
+.food-item-name-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.food-item-name-rating p {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.food-item-name-rating img {
+    width: 70px;
+}
+
+.food-item-desc {
+    color: #676767;
+    font-size: 12px;
+    margin: 5px 0; /* Reduce margin for tighter layout */
+}
+
+.food-item-price {
+    font-weight: 400;
+    font-size: 19px;
+    margin: 10px 0; /* Adjust margins for consistent spacing */
+}
+
+.food-item-img-container {
+    position: relative;
+}
+
+.food-item-img-container .add {
+    width: 35px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.food-item-counter {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.food-item-counter img {
+    width: 30px;
+}
+
+.btn-btn {
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px; /* Adjust margin to control spacing */
+}
