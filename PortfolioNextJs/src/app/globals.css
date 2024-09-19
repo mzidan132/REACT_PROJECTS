@@ -5,6 +5,21 @@
 html{
     scroll-behavior: smooth;
 }
+ .faded{
+    transition:0.1s;
+    animation:fadeIn 2s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100%{
+      opacity:1;
+    }
+  }
 .card .inner {
     padding: 5px;
     background: #222;
