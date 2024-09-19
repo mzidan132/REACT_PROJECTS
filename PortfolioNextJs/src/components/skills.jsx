@@ -41,7 +41,7 @@ function Skills() {
     <section id="skills" className="p-8 md:p-16  mx-auto">
       <h2 className="text-3xl md:text-4xl font-semibold mb-8 text-center">Skills</h2>
       <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-center">Technical Skills</h3>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-10 mt-5 place-items-center">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-10 mt-5 place-items-center skill-text">
         {technicalSkills.map((skill, index) => (
           <div key={index} className="">
             <div className="">

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increasing Text Width</title>
+    <style>
+        @keyframes increaseTextWidth {
+          0% {
+            transform: scaleX(1);
+          }
+          50% {
+            transform: scaleX(1.2); /* Increase width by 1.5x */
+          }
+          100% {
+            transform: scaleX(1);
+          }
+        }
+
+        .skill-text {
+          display: inline-block;
+          font-size: 24px;
+          transition: transform 2s ease-in-out;
+          animation: increaseTextWidth 2s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="skill-text">Skill Name</div>
+</body>
+</html>

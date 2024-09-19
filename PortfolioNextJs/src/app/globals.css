@@ -5,3 +5,97 @@
 html{
     scroll-behavior: smooth;
 }
+.card .inner {
+    padding: 5px;
+    background: #222;
+    color: #fff;
+    border-radius: var(--border-radius);
+  }
+  
+  .card h3 {
+   
+  }
+  
+  .example-1,
+  .example-2 {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .example-1 .inner,
+  .example-2 .inner {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+  }
+  
+  .example-1 .inner {
+    margin: 5px;
+  }
+  
+  
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .example-2 .inner {
+    margin: 2px;
+  }
+  
+  .example-2::before {
+    content: "";
+    display: block;
+    background: linear-gradient(
+      90deg,
+      rgba(174, 39, 245, 0.8) 0%,
+      rgba(16, 9, 220, 0.75) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    height: 300px;
+    width: 100px;
+    transform: translate(0);
+    position: absolute;
+    animation: rotate 2s linear forwards infinite;
+    z-index: 0;
+    top: 50%;
+    transform-origin: top center;
+  }
+  
+  .slide-in-text {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 2s ease-out;
+  }
+  
+  .slide-in-text-loaded {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  @keyframes increaseTextWidth {
+    0% {
+      transform: scaleX(1);
+    }
+    50% {
+      transform: scaleX(1.05); /* Increase width by 1.5x */
+    }
+    100% {
+      transform: scaleX(1);
+    }
+  }
+
+  .skill-text {
+    font-size: 24px;
+    transition: transform 2s ease-in-out;
+    animation: increaseTextWidth 2s ease-in-out infinite;
+  }
