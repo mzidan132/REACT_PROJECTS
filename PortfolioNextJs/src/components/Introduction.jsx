@@ -15,7 +15,7 @@ function Introduction() {
     <section id="introduction" className="relative bg-cover bg-center p-16 md:p-[200px] flex flex-col md:flex-row items-center justify-around mx-auto" style={{ backgroundImage: `url(bg.jpg)` }}>
       <div className='absolute top-0 right-0 left-0 bottom-0 bg-slate-950 opacity-50 z-20'>
       </div>
-      <div className="mb-6 md:mb-0 z-30 relative">
+      <div className="faded mb-6 md:mb-0 z-30 relative">
         <img
           src="pic-1.jpg"
           alt="Profile"
