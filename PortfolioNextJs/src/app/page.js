@@ -6,7 +6,6 @@ import Introduction from "@/components/Introduction";
 import Projects from "@/components/Projects";
 import Skills from "@/components/skills";
 
-
 export default function Home() {
   return (
     <main className="">

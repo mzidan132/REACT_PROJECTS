@@ -17,6 +17,14 @@ module.exports = {
         '103': '1.03',  // Adding a custom scale value of 103%
         // Add more as needed
       },
+      fadeIn: {
+        '0%': { opacity: '0' },
+        '100%': { opacity: '1' },
+      },
+      animation: {
+        fadeIn: 'fadeIn 2s ease-in-out',
+        scaleUp: 'scaleUp 2s ease-in-out',
+      },
     },
   },
   plugins: [],

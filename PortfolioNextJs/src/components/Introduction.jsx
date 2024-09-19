@@ -11,15 +11,16 @@ function Introduction() {
       document.querySelector('.slide-in-text').classList.add('slide-in-text-loaded');
     }, 1000); // 1-second delay
   }, []);
+  
   return (
     <section id="introduction" className="relative bg-cover bg-center p-16 md:p-[200px] flex flex-col md:flex-row items-center justify-around mx-auto" style={{ backgroundImage: `url(bg.jpg)` }}>
       <div className='absolute top-0 right-0 left-0 bottom-0 bg-slate-950 opacity-50 z-20'>
       </div>
-      <div className="faded mb-6 md:mb-0 z-30 relative">
+      <div className="mb-6 md:mb-0 z-30 relative faded">
         <img
           src="pic-1.jpg"
           alt="Profile"
-          className="w-32 h-32 md:w-[400px] cursor-pointer transform hover:scale-105 transition duration-300 md:h-[500px] border-2 border-solid border-blue-500 shadow-lg mx-auto"
+          className="w-32 h-32 md:w-[400px] cursor-pointer md:h-[500px] border-2 border-solid border-blue-500 shadow-lg mx-auto"
         />
       </div>
       <div className="text-center md:text-left md:ml-4 relative z-30 text-white">

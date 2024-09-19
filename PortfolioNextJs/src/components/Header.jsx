@@ -32,7 +32,6 @@ function Header() {
         <div className="md:hidden mt-2 space-y-2 bg-gradient-to-r from-blue-500 to-purple-500 p-4 rounded-lg shadow-lg">
           <a href="#introduction" onClick={() => setIsOpen(false)} className="block px-4 py-2 text-gray-200 hover:text-white transition duration-300">Introduction</a>
           <a href="#skills" onClick={() => setIsOpen(false)} className="block px-4 py-2 text-gray-200 hover:text-white transition duration-300">Skills</a>
-          <a href="#experience" onClick={() => setIsOpen(false)} className="block px-4 py-2 text-gray-200 hover:text-white transition duration-300">Experience</a>
           <a href="#projects" onClick={() => setIsOpen(false)} className="block px-4 py-2 text-gray-200 hover:text-white transition duration-300">Projects</a>
           <a href="#education" onClick={() => setIsOpen(false)} className="block px-4 py-2 text-gray-200 hover:text-white transition duration-300">Education</a>
           <a href="#contact" onClick={() => setIsOpen(false)} className="block px-4 py-2 text-gray-200 hover:text-white transition duration-300">Contact</a>
