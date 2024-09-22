@@ -14,7 +14,9 @@ import Login from './components/LoginPopup/Login.jsx'
 
 const App = () => {
   // token is a serverless modern session which is more optimized secured cause it saves users credentials at browser localstorage client
-  const { token } = useContext(StoreContext)
+  const { token,loading } = useContext(StoreContext)
+
+  if (loading) return <div>Loading...</div>;
 
   return (
     <>
