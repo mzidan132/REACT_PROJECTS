@@ -7,7 +7,7 @@ export const StoreContext = createContext(null);
 const StoreContextProvider = (props) => {
     // Initializes state for cart items as an empty object
     const [cartItems, setCartItems] = useState({});
-    
+    const [loading,setLoading]=useState(true)
     // Defines the base URL for the API
     const url = import.meta.env.VITE_BACKEND_URL;
     
@@ -83,16 +83,21 @@ const StoreContextProvider = (props) => {
 
     // useEffect hook to run side effects on component mount
     useEffect(() => {
-        async function loadData() {
-            await fetchFoodList(); // Fetches the food list
-            // Checks if a token is stored in localStorage
-            if (localStorage.getItem("token")) {
-                setToken(localStorage.getItem("token")); // Sets the token state
-                await loadCartData(localStorage.getItem("token")); // Loads cart data
-            }
+    async function loadData() {
+        await fetchFoodList();
+        const storedToken = localStorage.getItem("token");
+        if (storedToken) {
+            setToken(storedToken);
+            await loadCartData(storedToken);
         }
-        loadData(); // Calls the loadData function
-    }, []);
+        setLoading(false);
+    }
+    loadData();
+}, []);
+
+// In your router:
+if (loading) return <div>Loading...</div>; // or a spinner
+
 
     // Defines the value to be provided to context consumers
     const contextValue = {
