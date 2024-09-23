@@ -8,28 +8,28 @@ const Header = () => {
 
       <div className="flex space-x-12 ml-20">
         <div className="relative group">
-          <button className="text-white focus:outline-none transition-transform duration-300 hover:scale-300">
+          <button className="text-white focus:outline-none transition-transform duration-300 hover:scale-125">
             Home 
             <span className="inline-block ml-1 text-sm"><FontAwesomeIcon icon={faChevronDown} /></span>
           </button>
         </div>
 
         <div className="relative group">
-          <button className="text-white focus:outline-none transition-transform duration-300 hover:scale-300">
+          <button className="text-white focus:outline-none transition-transform duration-300 hover:scale-125">
             Event
             <span className="inline-block ml-1"><FontAwesomeIcon icon={faChevronDown} /></span>
           </button>
         </div>
 
         <div className="relative group">
-          <button className="text-white focus:outline-none transition-transform duration-300 hover:scale-300">
+          <button className="text-white focus:outline-none transition-transform duration-300 hover:scale-125">
             Contact
             <span className="inline-block ml-1"><FontAwesomeIcon icon={faChevronDown} /></span>
           </button>
         </div>
 
         <div className="relative group">
-          <button className="text-white focus:outline-none transition-transform duration-300 hover:scale-300">
+          <button className="text-white focus:outline-none transition-transform duration-300 hover:scale-125">
             Blog
             <span className="inline-block ml-1"><FontAwesomeIcon icon={faChevronDown} /></span>
           </button>
