@@ -24,7 +24,7 @@ const Contact = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
   
-        <div className="bg-white rounded-xl shadow-lg p-4 relative border border-gray-200">
+        <div className="bg-white rounded-xl shadow-lg p-4 relative border border-gray-200 transition-transform duration-300 hover:scale-110">
           <div className="h-40 rounded-t-lg bg-gradient-to-tr from-purple-300 to-purple-500 flex items-center justify-center"></div>
           <div className="flex -mt-6 ml-6">
             <div className="flex items-left relative z-10">
