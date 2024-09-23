@@ -15,21 +15,21 @@ const Header = () => {
         </div>
 
         <div className="relative group">
-          <button className="text-white focus:outline-none">
+          <button className="text-white focus:outline-none transition-transform duration-300 hover:scale-105">
             Event
             <span className="inline-block ml-1"><FontAwesomeIcon icon={faChevronDown} /></span>
           </button>
         </div>
 
         <div className="relative group">
-          <button className="text-white focus:outline-none">
+          <button className="text-white focus:outline-none transition-transform duration-300 hover:scale-105">
             Contact
             <span className="inline-block ml-1"><FontAwesomeIcon icon={faChevronDown} /></span>
           </button>
         </div>
 
         <div className="relative group">
-          <button className="text-white focus:outline-none">
+          <button className="text-white focus:outline-none transition-transform duration-300 hover:scale-105">
             Blog
             <span className="inline-block ml-1"><FontAwesomeIcon icon={faChevronDown} /></span>
           </button>
