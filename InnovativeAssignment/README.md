@@ -1,3 +1,4 @@
+Sorry Sir couldnt make the website more responsive, functional and beautiful for limited time, apologies, thank you
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
