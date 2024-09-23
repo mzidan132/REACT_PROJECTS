@@ -44,7 +44,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="bg-white rounded-xl shadow-lg p-4 relative border border-gray-200">
+        <div className="bg-white rounded-xl shadow-lg p-4 relative border border-gray-200 transition-transform duration-300 hover:scale-125">
           <div className="h-40 rounded-t-lg bg-gradient-to-tr from-green-300 to-green-500 flex items-center justify-center"></div>
           <div className="flex -mt-6 ml-6">
             <div className="flex items-left relative z-10">
@@ -64,7 +64,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="bg-white rounded-xl shadow-lg p-4 relative border border-gray-200">
+        <div className="bg-white rounded-xl shadow-lg p-4 relative border border-gray-200 transition-transform duration-300 hover:scale-125">
           <div className="h-40 rounded-t-lg bg-gradient-to-tr from-blue-300 to-blue-500 flex items-center justify-center"></div>
           <div className="flex -mt-6 ml-6">
             <div className="flex items-left relative z-10">
@@ -84,7 +84,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="bg-white rounded-xl shadow-lg p-4 relative border border-gray-200">
+        <div className="bg-white rounded-xl shadow-lg p-4 relative border border-gray-200 transition-transform duration-300 hover:scale-125">
           <div className="h-40 rounded-t-lg bg-gradient-to-tr from-yellow-300 to-yellow-500 flex items-center justify-center"></div>
           <div className="flex -mt-6 ml-6">
             <div className="flex items-left relative z-10">
@@ -104,7 +104,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="bg-white rounded-xl shadow-lg p-4 relative border border-gray-200">
+        <div className="bg-white rounded-xl shadow-lg p-4 relative border border-gray-200 transition-transform duration-300 hover:scale-125">
           
           <div className="h-40 rounded-t-lg bg-gradient-to-tr from-orange-300 to-orange-500 flex items-center justify-center"></div>
           <div className="flex -mt-6 ml-6">
@@ -125,7 +125,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="bg-white rounded-xl shadow-lg p-4 relative border border-gray-200">
+        <div className="bg-white rounded-xl shadow-lg p-4 relative border border-gray-200 transition-transform duration-300 hover:scale-125">
           <div className="h-40 rounded-t-lg bg-gradient-to-tr from-pink-300 to-pink-500 flex items-center justify-center"></div>
           <div className="flex -mt-6 ml-6">
             <div className="flex items-left relative z-10">
@@ -145,7 +145,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="bg-white rounded-xl shadow-lg p-4 relative border border-gray-200">
+        <div className="bg-white rounded-xl shadow-lg p-4 relative border border-gray-200 transition-transform duration-300 hover:scale-125">
           <div className="h-40 rounded-t-lg bg-gradient-to-tr from-gray-300 to-gray-500 flex items-center justify-center"></div>
           <div className="flex -mt-6 ml-6">
             <div className="flex items-left relative z-10">
@@ -164,7 +164,7 @@ const Contact = () => {
             <button className="bg-teal-400 text-white px-4 py-1 rounded-full text-sm">DSVBD</button>
           </div>
         </div>
-        <div className="bg-white rounded-xl shadow-lg p-4 relative border border-gray-200">
+        <div className="bg-white rounded-xl shadow-lg p-4 relative border border-gray-200 transition-transform duration-300 hover:scale-125">
           <div className="h-40 rounded-t-lg bg-gradient-to-tr from-pink-300 to-pink-500 flex items-center justify-center"></div>
           <div className="flex -mt-6 ml-6">
             <div className="flex items-left relative z-10">
