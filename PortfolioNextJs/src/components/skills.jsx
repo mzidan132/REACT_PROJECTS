@@ -3,7 +3,7 @@ import React from 'react';
 import {useEffect} from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaPython, FaGitAlt, FaGithub,FaMountain, FaWordPress } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaPython, FaGitAlt, FaGithub,FaMountain, FaWordpress } from 'react-icons/fa';
 import { SiMongodb,SiElectron, SiNextdotjs, SiExpress, SiPandas, SiFirebase, SiRender, SiTailwindcss,SiVercel,SiTensorflow, SiBootstrap, SiPhp, SiMysql } from 'react-icons/si';
 import { MdPeople, MdOutlineChat } from 'react-icons/md'; 
 
@@ -23,12 +23,12 @@ function Skills() {
 
   const backendSkills = [
     { name: 'php', icon: <SiPhp className="text-indigo-800" /> },
-    { name: 'WordPress', icon: <FaWordPress className="text-blue-200" /> },
+    { name: 'Wordpress', icon: <FaWordpress className="text-blue-200" /> },
     { name: 'Express.js', icon: <SiExpress className="text-gray-500" /> },
   ];
 
   const mlSkills=[
-    { name: 'Python', icon: <FaPython className="text-blue-400" /> },
+    { name: 'PythonFlask', icon: <FaPython className="text-blue-400" /> },
     { name: 'Pandas', icon: <SiPandas className="text-blue-800" /> },
     { name: 'Tensorflow', icon: <SiTensorflow className="text-yellow-800" /> },
   ];
