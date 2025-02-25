@@ -3,7 +3,7 @@ import React from 'react';
 import {useEffect} from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaPython, FaGitAlt, FaGithub,FaMountain } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaPython, FaGitAlt, FaGithub,FaMountain, FaWordPress } from 'react-icons/fa';
 import { SiMongodb,SiElectron, SiNextdotjs, SiExpress, SiPandas, SiFirebase, SiRender, SiTailwindcss,SiVercel,SiTensorflow, SiBootstrap, SiPhp, SiMysql } from 'react-icons/si';
 import { MdPeople, MdOutlineChat } from 'react-icons/md'; 
 
@@ -23,7 +23,7 @@ function Skills() {
 
   const backendSkills = [
     { name: 'php', icon: <SiPhp className="text-indigo-800" /> },
-    { name: 'Node.js', icon: <FaNodeJs className="text-green-500" /> },
+    { name: 'WordPress', icon: <FaWordPress className="text-blue-200" /> },
     { name: 'Express.js', icon: <SiExpress className="text-gray-500" /> },
   ];
 
